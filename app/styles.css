@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+#apartment-container {
+    width: 70%;
+    position: relative;
+}
+
+.apartment-card {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#sidebar {
+    width: 25%;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.thumbs-up {
+    animation: thumbsUp 0.5s forwards;
+}
+
+.thumbs-down {
+    animation: thumbsDown 0.5s forwards;
+}
+
+@keyframes thumbsUp {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes thumbsDown {
+    from { transform: scale(1); }
+    to { transform: scale(0); }
+} 
